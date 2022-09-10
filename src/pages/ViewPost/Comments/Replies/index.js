@@ -20,17 +20,19 @@ const Replies = ({ user, deleteHandler, replies }) => {
 
   return (
     <>
-      <p
-        style={{
-          cursor: 'pointer',
-          color: 'grey',
-        }}
-        onClick={() => {
-          setHidden((p) => {
-            return !p;
-          });
-        }}
-      >{`${hidden ? 'show' : 'hide'} replies (${replies.length})`}</p>
+      {eplies.length > 0 && (
+        <p
+          style={{
+            cursor: 'pointer',
+            color: 'grey',
+          }}
+          onClick={() => {
+            setHidden((p) => {
+              return !p;
+            });
+          }}
+        >{`${hidden ? 'show' : 'hide'} replies (${replies.length})`}</p>
+      )}
 
       {!hidden &&
         replies.map((r) => {
