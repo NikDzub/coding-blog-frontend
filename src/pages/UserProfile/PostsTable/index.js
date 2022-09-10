@@ -16,7 +16,7 @@ function createData(name, calories, fat, carbs, protein) {
 }
 
 export default function PostsTable({ posts }) {
-  const link = 'http://localhost:4455';
+  const link = process.env.REACT_APP_API_URL;
   let rows = [];
   posts.map((p) => {
     rows.push(

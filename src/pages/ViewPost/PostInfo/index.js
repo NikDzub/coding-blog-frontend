@@ -19,7 +19,7 @@ import { toggleLikePostThunk } from '../../../redux/slices/auth';
 import styles from './PostInfo.module.scss';
 
 const PostInfo = ({ post }) => {
-  const link = 'http://localhost:4455';
+  const link = process.env.REACT_APP_API_URL;
 
   const dispatch = useDispatch();
 

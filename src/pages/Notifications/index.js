@@ -18,7 +18,7 @@ import axios from '../../api';
 import styles from './Notifications.module.scss';
 
 export default function Notifications() {
-  const link = 'http://localhost:4455';
+  const link = process.env.REACT_APP_API_URL;
 
   const dispatch = useDispatch();
   const { user } = useSelector((state) => {

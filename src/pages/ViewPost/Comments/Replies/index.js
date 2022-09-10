@@ -14,7 +14,7 @@ import { format } from 'date-format-parse';
 import { Link } from 'react-router-dom';
 
 const Replies = ({ user, deleteHandler, replies }) => {
-  const link = 'http://localhost:4455';
+  const link = process.env.REACT_APP_API_URL;
 
   const [hidden, setHidden] = React.useState(true);
 

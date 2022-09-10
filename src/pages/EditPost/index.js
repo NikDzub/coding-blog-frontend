@@ -20,7 +20,7 @@ import styles from './EditPost.module.scss';
 const mdParser = new MarkdownIt(/* Markdown-it options */);
 
 export default function EditPost() {
-  const link = 'http://localhost:4455';
+  const link = process.env.REACT_APP_API_URL;
 
   const postId = useLocation().pathname.replace('/blog/edit/', '');
 
@@ -81,7 +81,7 @@ export default function EditPost() {
     try {
       if (imgHolder) {
         const { data } = await axios.post('/upload', imgHolder);
-        post.img = data.url.replace('http://localhost:4455', '');
+        post.img = data.url.replace(process.env.REACT_APP_API_URL, '');
       }
 
       dispatch(

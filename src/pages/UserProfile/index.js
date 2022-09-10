@@ -25,7 +25,7 @@ function createData(name, calories, fat, carbs, protein) {
 
 export default function UserProfile() {
   const dispatch = useDispatch();
-  const link = 'http://localhost:4455';
+  const link = process.env.REACT_APP_API_URL;
 
   const userName = useLocation().pathname.replace('/profile/', '');
 

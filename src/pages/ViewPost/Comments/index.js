@@ -24,7 +24,7 @@ import Replies from './Replies';
 import styles from './Comments.module.scss';
 
 const Comments = ({ comments }) => {
-  const link = 'http://localhost:4455';
+  const link = process.env.REACT_APP_API_URL;
   const postId = useLocation().pathname.replace('/blog/', '');
 
   const { user, status } = useSelector((state) => {

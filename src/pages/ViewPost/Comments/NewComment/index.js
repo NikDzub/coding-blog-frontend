@@ -16,7 +16,7 @@ import { useLocation } from 'react-router-dom';
 import styles from './NewComment.module.scss';
 
 export default function NewComment({ setReply, reply, addComment }) {
-  const link = 'http://localhost:4455';
+  const link = process.env.REACT_APP_API_URL;
   const postId = useLocation().pathname.replace('/blog/', '');
   const { user } = useSelector((state) => {
     return state.authReducer.auth;

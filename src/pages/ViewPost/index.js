@@ -20,7 +20,7 @@ import styles from './ViewPost.module.scss';
 const mdParser = new MarkdownIt(/* Markdown-it options */);
 
 export default function ViewPost() {
-  const link = 'http://localhost:4455';
+  const link = process.env.REACT_APP_API_URL;
 
   const postId = useLocation().pathname.replace('/blog/', '');
 

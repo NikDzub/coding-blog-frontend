@@ -30,7 +30,7 @@ const ResponsiveAppBar = () => {
     return state.authReducer.auth;
   });
 
-  const link = 'http://localhost:4455';
+  const link = process.env.REACT_APP_API_URL;
 
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
