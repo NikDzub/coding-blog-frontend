@@ -1,0 +1,33 @@
+.postStats {
+  border-bottom-right-radius: 5px;
+  position: absolute;
+  width: 100%;
+  padding: 5px;
+  background-color: #303030b5;
+  display: flex;
+  color: white;
+  flex-direction: row;
+  align-items: center;
+  font-size: 0.8rem;
+}
+.postStats svg {
+  margin: 0px 3px 0px 15px;
+  font-size: 1.2rem;
+}
+.postStats svg:hover {
+  filter: brightness(80%);
+}
+.postStats a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.liked {
+  color: #d32f2f;
+}
+.likeContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}

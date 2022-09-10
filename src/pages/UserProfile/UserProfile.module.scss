@@ -1,0 +1,10 @@
+.ProfileWraper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.imgHover:hover {
+  cursor: pointer;
+  filter: brightness(80%);
+}
