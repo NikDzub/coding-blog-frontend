@@ -20,7 +20,7 @@ const Replies = ({ user, deleteHandler, replies }) => {
 
   return (
     <>
-      {eplies.length > 0 && (
+      {replies.length > 0 && (
         <p
           style={{
             cursor: 'pointer',
